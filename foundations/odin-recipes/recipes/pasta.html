@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- copied from https://stackoverflow.com/questions/24679468/add-padding-around-all-webpage-contents -->
+<!-- https://www.allrecipes.com/recipe/241920/easy-homemade-pasta-dough/ -->
+<!-- https://stackoverflow.com/questions/5568229/how-can-i-prefix-ordered-list-item-numbers-with-a-static-string-using-css -->
+<html>
+  <title>Pasta</title>
+  <style>
+    h1 {
+      color: red;
+      font-size: 20px;
+    }
+
+    p {
+      color: blue;
+      font-size: 14px;
+      font-family: monospace;
+    }
+
+    ol {
+      counter-reset: item;
+      list-style-type: none;
+    }
+
+    ol li:before {
+      content: "Step " counter(item, decimal) ". ";
+      counter-increment: item;
+    }
+
+    body {
+      padding: 10px;
+    }
+  </style>
+
+  <body>
+    <h1>Pasta</h1>
+    <p>
+      Prep time : 20 mins <br />
+      Additional time : 5 mins <br />
+      Total time : 25 mins <br />
+    </p>
+    <h2>Ingredients</h2>
+
+    <ul>
+      <li>
+        Flour: This homemade pasta recipe starts with two cups of all-purpose
+        flour.
+      </li>
+      <li>Eggs: Eggs lend fat and moisture to the pasta dough.</li>
+      <li>
+        Oil: Two tablespoons of olive oil add moisture and help the dough come
+        together.
+      </li>
+      <li>Salt: A teaspoon of salt takes the flavor up a notch.</li>
+      <li>Water: Add just enough water to form a smooth, thick dough.</li>
+    </ul>
+    
+    <h2>How to make</h2>
+    <ol>
+      <li>
+        Make the dough.
+      </li>
+      <br />
+      <li>
+        Turn the dough out and knead it for 10 minutes.
+    </li>
+      <br />
+      <li>Let the dough rest.</li>
+      <br />
+      <li>Divide the dough into balls.</li>
+      <br />
+      <li>
+        Use a pasta machine to roll and cut the dough into desired shapes.
+      </li>
+    </ol>
+  </body>
+</html>

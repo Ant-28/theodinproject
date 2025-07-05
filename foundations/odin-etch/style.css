@@ -1,0 +1,21 @@
+html,body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+div.centerbox{
+    display:flex;
+    width: 80vh;
+    height: 80vh;
+
+    border-color: black;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    border: 2px solid;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- copied from https://stackoverflow.com/questions/24679468/add-padding-around-all-webpage-contents -->
+<!-- https://www.allrecipes.com/recipe/267698/palak-paneer-curry/ -->
+<!-- https://stackoverflow.com/questions/5568229/how-can-i-prefix-ordered-list-item-numbers-with-a-static-string-using-css -->
+<html>
+  <title>Palak Paneer</title>
+  <style>
+    h1 {
+      color: red;
+      font-size: 20px;
+    }
+    p {
+      color: blue;
+      font-size: 14px;
+      font-family: monospace;
+    }
+    ol {
+      counter-reset: item;
+      list-style-type: none;
+    }
+
+    ol li:before {
+      content: "Step " counter(item, decimal) ". ";
+      counter-increment: item;
+    }
+    body {
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <h1>Palak Paneer</h1>
+    <p>
+      Prep time : 15 mins <br />
+      Cook time : 30 mins <br />
+      Total time: 45 mins <br />
+    </p>
+    <h2>Ingredients</h2>
+
+    <ul>
+      <li>5 cups fresh spinach</li>
+      <li>4 tablespoons canola oil, divided</li>
+      <li>1 teaspoon cumin seeds</li>
+      <li>1 onion, chopped</li>
+      <li>1 green chile pepper, chopped</li>
+      <li>3 cloves garlic, minced</li>
+      <li>1 (1/2 inch) piece ginger, minced</li>
+      <li>2 tomatoes, diced</li>
+      <li>cup water, or as needed</li>
+      <li>1 teaspoon coriander powder</li>
+      <li>1 teaspoon cumin powder</li>
+      <li>1/2 teaspoon red chile powder</li>
+      <li>1/4 teaspoon turmeric powder</li>
+      <li>salt to taste</li>
+      <li>8 ounces paneer, cubed</li>
+      <li>1/2 teaspoon garam masala</li>
+      <li>4 teaspoons heavy cream</li>
+      <li>1 pinch red chile flakes</li>
+    </ul>
+    <h2>Directions</h2>
+    <ol>
+      <li>
+        Bring a saucepan of water to a boil. Add spinach and cook for 1 minute.
+        Transfer to a bowl of ice water to keep spinach bright green.
+      </li>
+      <br />
+      <li>
+        Heat 2 tablespoons oil in a skillet over medium heat. Add cumin seeds to
+        hot oil so they sizzle. Add onion, chile, garlic, and ginger. Cook until
+        onion is golden brown, 3 to 5 minutes. Add tomatoes and cook until soft,
+        about 2 minutes more. Remove from heat and allow mixture to cool.
+      </li>
+      <br />
+      <li>
+        Transfer tomato mixture to a blender; add blanched spinach. Blend to a
+        thick, smooth paste; thin with a few teaspoons water if needed.
+      </li>
+      <br />
+      <li>
+        Heat remaining oil in the skillet over medium heat. Add coriander,
+        cumin, chile powder, and turmeric. Fry until fragrant, about 1 minute.
+        Add spinach paste and cook over medium-high heat for 2 minutes. Add
+        water and cook for 5 minutes more. Season gravy with salt.
+      </li>
+      <br />
+      <li>
+        Add paneer to the gravy and mix well to coat. Cook 5 minutes more. Add
+        garam masala and cream. Stir and cook over low heat for 2 minutes.
+        Garnish with chile flakes.
+      </li>
+      <br />
+    </ol>
+  </body>
+</html>

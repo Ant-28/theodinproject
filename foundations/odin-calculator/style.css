@@ -1,0 +1,63 @@
+html,body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: min(500px, max(40vw, 700px));
+    height: 80vh;   
+    border: 5px solid black;
+    flex-shrink: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 16vh;
+    width: 100%;
+}
+
+section.calcDisplay {
+    margin: 5%;
+    height: 80%;    
+    /* border-width: 3px;
+    border-color: black;
+    border-style: solid; */
+    justify-self: center;
+    border-radius: 1em;
+    background-color: #9b9f77;
+}
+button.calcButton {
+    
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    font-size: 1.5em;
+    font-family: monospace;
+    font-weight: 200;
+    background-color: bisque;
+    
+}
+
+div.displayBox {
+    padding: 20px;
+    /* justify-content: right; */
+    width: 100%;
+    text-align: right;
+    font-size: 1.5em;
+    font-family: monospace;
+    
+}
