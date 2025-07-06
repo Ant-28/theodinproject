@@ -1,0 +1,238 @@
+@import url(reset.css);
+:root {
+    --max-leafimg-width: 25vw;
+    --greybox-xabspos:  50vh;
+    --greybox-xrelpos: -20vh; 
+    --greybox-height:   15vh;
+}
+
+@font-face {
+    font-family: norsebold;
+    src: url("fonts/norsebold.otf");
+}
+
+html, body {
+    margin: 0px;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.titleimg {
+    display: flex;
+    width: var(--max-leafimg-width);
+    height: 100vh;
+    justify-content: center;
+}
+
+img[src="assets/leaves.jpg"] {
+    position: absolute;
+    height: 100vh;
+    width: var(--max-leafimg-width);
+    overflow: clip;
+    object-fit: cover; /* clip the image */
+    z-index: -1;
+}
+
+div.banner {
+    display: flex;
+    justify-content: center;
+    font-family: norsebold, serif;
+    color: white;
+    align-items: center;
+    width: 100%;
+}
+
+.bannercon {
+    display: flex;
+    position: relative;
+    top: var(--greybox-xrelpos);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 40pt;
+    background-color: rgb(0, 0, 0, 0.45);
+    height: var(--greybox-height);
+}
+
+img[src="assets/odin-lined.png"]{
+    height: 15vh;
+    max-width: 8vw;
+    object-fit: scale-down;
+}
+p {
+    margin: 0px;
+}
+/* form text */
+
+section.formcontainer {
+    width: 75vw;
+    background-color: #f9fafb;
+}
+/* .form {
+    
+    
+} */
+
+.formtext {
+    margin-left: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-weight: bold;
+    width: 50vw;
+    height: calc(var(--greybox-height) / 2 + var(--greybox-xabspos) + var(--greybox-xrelpos));
+    
+}
+
+.formtext > p {
+    width: 100%;
+}
+.formtext, .formbody > p, .formarea > p {
+    
+    font-family: Roboto, sans-serif;
+    font-size: 15pt;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+}
+.formbody {
+    margin-left: 2vw;
+    justify-content: left;
+    border-width: 2px;
+    width: 45vw;
+    margin-bottom: 4vh;
+}
+
+.form_rightcol {
+    margin-left: 5vw;
+}
+
+.loginbuttons {
+    margin-top: 4vh;
+    margin-left: 2vw;
+}
+
+span.italic {
+    font-style: italic;
+}
+
+label {
+    font-size: 10pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    line-height: 4vh;
+}
+
+form {
+    flex-direction: column;
+}
+
+
+input, input:focus {
+    border-radius: 5px;
+    height: 15pt;
+    font-size: 10pt;
+    border: 2px solid #E5E7EB;
+    margin-bottom: 1vh;
+}
+
+input[type="password"]:invalid{
+    box-shadow: 1pt 1pt black;
+    border-color: rgba(198, 5, 5, 0.879);
+}
+
+input:focus {
+    box-shadow: 1pt 1pt black;
+    border-color: rgba(0, 173, 217, 1);
+}
+
+input[type="password"]:valid {
+    box-shadow: 1pt 1pt black;
+    border-color: rgb(82, 177, 117);
+}
+
+
+
+
+.formbody {
+    display: flex;
+    flex-direction: row;
+}
+.form_leftcol, .form_rightcol{
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+.formbox {
+    background-color: white;
+    box-shadow: 3pt 3pt 3pt rgba(0, 0, 0, 0.15);
+}
+
+.formarea, .formarea > p {
+    font-weight: bold;
+    margin-bottom: 2vh;
+    margin-left: 2vw;
+}
+
+button.createacc {
+    font-size: 12pt;
+    background-color: #596D48;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    height: 30pt;
+    width: 120pt;
+    display: flex;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginbuttons {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+
+a.login:link {
+    text-decoration: none;
+    color: #5b6f4a;
+    font-weight: bold;
+    
+}
+
+a.login:hover {
+    text-decoration: underline;
+    color: #5b6f4a;
+    font-weight: bold;
+}
+
+a.login:visited {
+    text-decoration: underline;
+    color: #5b43df;
+    font-weight: bold;
+}
+
+div.credits {
+    position: absolute;
+    top: 95vh;
+    color: white;
+    font-family: Roboto, Arial, "Segoe UI", sans-serif;
+    text-align: center;
+    height: 5vh;
+    width: 25vw;
+  
+}
+
+a:visited {
+    text-decoration: underline;
+    color: #dbd5ff;
+    
+}

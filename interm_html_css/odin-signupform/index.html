@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Form</title>
+</head>
+
+<body>
+    <article>
+        <section class="titleimg">
+            <img class="leaf" src="assets/leaves.jpg">
+            <div class="banner"> <!--I have no clue why this takes up 100vh-->
+                <div class="bannercon">
+                    <img src="assets/odin-lined.png">
+                    ODIN
+                </div>
+            </div>
+            <div class="credits">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a></div>
+        </section>
+        <section class="formcontainer">
+            <section class="form">
+                <div class="formtext">
+                    <p>
+                        This is not a real online service! You know you need something like this in your life to help
+                        you realize your deepest dreams.
+                        <br>
+                        Sign up <span class="italic">now</span> to get started.
+                        <br>
+                        <br>
+                        You <span class="italic">know</span> you want to.
+                        <br>
+                        <br>
+                    </p>
+                </div>
+
+                <form action="https://www.httpbin.org/post" method="post">
+                    
+                    <div class="formbox">
+                        <span class="formarea"><p>Let's do this! <br></p></span>
+                        <div class="formbody">
+                        <div class="form_leftcol">
+                            <!-- first name -->
+                            <label for="first_name">First Name</label>
+                            <input type="text" id="first_name">
+                            <!-- email -->
+                            <label for="user_email">Email</label>
+                            <input type="email" id="user_email">
+                            <!-- password -->
+                            <label for="user_pw">Password</label>
+                            <input type="password" id="user_pw"  pattern="(([A-Za-z0-9]@_){8})(([A-Za-z0-9]@_)*)">
+                        </div>
+                        <div class="form_rightcol">
+                            <!-- last name -->
+                            <label for="last_name">Last Name</label>
+                            <input type="text" id="last_name">
+                            <!-- phone num -->
+                            <label for="user_phone">Phone Number</label>
+                            <input type="text" id="user_phone">
+                            <!-- password confirmation -->
+                            <label for="user_pwcon">Confirm Password</label>
+                            <input type="password" id="user_pwcon"  pattern="(([A-Za-z0-9]@_){8})(([A-Za-z0-9]@_)*)">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="loginbuttons">
+                        <button type="submit" class="createacc">Create Account</button>
+                        <p><br>Already have an account? <span class="login"><a class="login" href="https://www.theodinproject.com">Log in</a></span>.</p>
+                    </div>
+
+
+                </form>
+
+
+            </section>
+        </section>
+    </article>
+</body>
+
+</html>
